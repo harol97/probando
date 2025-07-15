@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ms-users
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5433/users
+    username: postgres
+    password: harol
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8081
